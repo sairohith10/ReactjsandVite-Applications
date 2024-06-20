@@ -1,0 +1,49 @@
+/* CustomerList.css */
+.customer-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.customer-table th, .customer-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.customer-table th {
+    cursor: pointer;
+   /* position: relative;  Ensure relative positioning for pseudo-element */
+}
+
+.customer-table th.sortable:hover::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 8px; /* Adjust as needed */
+    transform: translateY(-50%);
+    border: 5px solid transparent;
+    border-top-color: #000;
+}
+
+.customer-table th.sortable.asc:hover::after {
+    border-top-color: transparent;
+    border-bottom-color: #000;
+}
+
+.customer-table th.sortable.desc:hover::after {
+    border-bottom-color: transparent;
+    border-top-color: #000;
+}
+
+.search-bar {
+    margin-bottom: 10px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

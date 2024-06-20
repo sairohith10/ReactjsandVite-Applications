@@ -1,0 +1,51 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa; /* Light blue background */
+}
+
+.App {
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff; /* White background for content area */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00796b; /* Dark cyan color for heading */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #2d2525;
+  text-align: left;
+  padding: 12px;
+}
+
+th {
+  background-color: #00796b; /* Dark cyan color for headers */
+  color: #ffffff; /* White text for headers */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e0f7fa; /* Light blue for even rows */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* White for odd rows */
+}
+
+tbody tr:hover {
+  background-color: #b2dfdb; /* Light cyan on hover */
+}
